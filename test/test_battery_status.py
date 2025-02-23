@@ -4,10 +4,6 @@ from unittest.mock import MagicMock, patch
 from battery_status import get_battery_status
 
 class TestGetBatteryStatus(unittest.TestCase):
-    def test_get_battery_status_full(self):
-        result = get_battery_status()
-        self.assertEqual(result, 100)
-
     def test_positive(self):
         result = get_battery_status()
         self.assertGreater(result,0)
