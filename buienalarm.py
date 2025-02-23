@@ -32,7 +32,7 @@ def open_safari(location):
         case _:
             return "ERROR_INVALID_LOCATION"
 
-if len(sys.argv) == 1:
+if len(sys.argv) == 2:
     loc = sys.argv[1]
     ecode = open_safari(loc.lower())
     print(ecode)

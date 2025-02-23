@@ -18,7 +18,7 @@ import sys, time, math
 
 timer = int(sys.argv[1])
 
-if len(sys.argv) == 1:
+if len(sys.argv) == 2:
     if timer > 5:
         time.sleep(timer * 60)
         rest_time = timer / 5
