@@ -16,7 +16,7 @@ import sys
 import subprocess
 
 def open_safari(location):
-    match location.lower():
+    match location:
         case "delft":
             subprocess.run(["open", "-a","Safari", "https://www.buienalarm.nl/nederland/delft/8569"])
             return location, "OK"
@@ -31,10 +31,6 @@ def open_safari(location):
             return location, "OK"
 
 loc = sys.argv[1]
-dloc,dlocvalue = open_safari(loc)
-
-#debug
-#print(dloc + " " + dlocvalue)
-#print("Opening buienalarm for the following location: " + loc)
+open_safari(loc.lower())
 
 
