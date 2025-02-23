@@ -15,6 +15,8 @@
 
 import psutil
 
-battery_level = psutil.sensors_battery().percent
-print(str(battery_level) + "%")
+def get_battery_status():
+    battery_level = psutil.sensors_battery().percent
+    return battery_level
 
+print(str(get_battery_status()) + "%")
