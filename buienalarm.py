@@ -19,18 +19,26 @@ def open_safari(location):
     match location:
         case "delft":
             subprocess.run(["open", "-a","Safari", "https://www.buienalarm.nl/nederland/delft/8569"])
-            return location, "OK"
+            return "OK"
         case "rotterdam":
             subprocess.run(["open", "-a", "Safari", "https://www.buienalarm.nl/nederland/rotterdam/16707"])
-            return location, "OK"
+            return "OK"
         case "brussels":
             subprocess.run(["open", "-a", "Safari", "https://www.buienalarm.nl/belgie/brussels/7196"])
-            return location, "OK"
+            return "OK"
         case "antwerp":
             subprocess.run(["open", "-a", "Safari", "https://www.buienalarm.nl/belgie/antwerpen/5686"])
-            return location, "OK"
+            return "OK"
+        case _:
+            return "ERROR_INVALID_LOCATION"
 
-loc = sys.argv[1]
-open_safari(loc.lower())
+if len(sys.argv) > 1:
+    loc = sys.argv[1]
+    ecode = open_safari(loc.lower())
+    print(ecode)
+else:
+    print("Usage: buienalarm.py <location>")
+    print("Available location: delft, rotterdam, brussels, antwerp")
+
 
 
