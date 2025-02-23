@@ -33,7 +33,8 @@ def open_safari(location):
 loc = sys.argv[1]
 dloc,dlocvalue = open_safari(loc)
 
-print(dloc + " " + dlocvalue)
-print("Opening buienalarm for the following location: " + loc)
+#debug
+#print(dloc + " " + dlocvalue)
+#print("Opening buienalarm for the following location: " + loc)
 
 
