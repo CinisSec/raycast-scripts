@@ -1,9 +1,5 @@
 import unittest
-from unittest.mock import patch, call
-import sys
-from io import StringIO
-
-# Import the function from the original script
+from unittest.mock import patch
 from buienalarm import open_safari
 
 class TestBuienalarm(unittest.TestCase):
