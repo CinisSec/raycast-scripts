@@ -34,8 +34,7 @@ def open_safari(location):
 
 if len(sys.argv) == 2:
     loc = sys.argv[1]
-    ecode = open_safari(loc.lower())
-    print(ecode)
+    open_safari(loc.lower())
 else:
     print("Usage: buienalarm.py <location>")
     print("Available location: delft, rotterdam, brussels, antwerp")
