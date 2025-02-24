@@ -38,10 +38,6 @@ class TestGetBatteryStatus(unittest.TestCase):
         result = get_battery_status()
         self.assertEqual(result, 99)
 
-print("-------------------------")
-print("Testing battery_status.py")
-print("-------------------------")
-
 if __name__ == '__main__':
     unittest.main()
 
