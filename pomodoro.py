@@ -14,7 +14,9 @@ import subprocess
 # @raycast.description pomodoro timer
 # @raycast.author Grey
 
-import sys, time, math
+import sys 
+import time 
+import math
 
 timer = int(sys.argv[1])
 
