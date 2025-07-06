@@ -15,18 +15,19 @@
 import sys
 import subprocess
 
+# needs refactoring due to copy pasta code
 def open_safari(location):
     match location:
-        case "delft":
+        case "d":
             subprocess.run(["open", "-a","Safari", "https://www.buienalarm.nl/nederland/delft/8569"])
             return "OK"
-        case "rotterdam":
+        case "r":
             subprocess.run(["open", "-a", "Safari", "https://www.buienalarm.nl/nederland/rotterdam/16707"])
             return "OK"
-        case "brussels":
+        case "b":
             subprocess.run(["open", "-a", "Safari", "https://www.buienalarm.nl/belgie/brussels/7196"])
             return "OK"
-        case "antwerp":
+        case "a":
             subprocess.run(["open", "-a", "Safari", "https://www.buienalarm.nl/belgie/antwerpen/5686"])
             return "OK"
         case _:
