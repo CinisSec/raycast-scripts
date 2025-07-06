@@ -1,4 +1,4 @@
 # exclude test folder
 test/
 buienalarm_locations.json
-__pycache__
+__pycache__.idea/
