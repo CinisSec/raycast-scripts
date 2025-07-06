@@ -13,7 +13,8 @@
 # @raycast.description check battery status
 # @raycast.author Grey
 
-import psutil, math
+import psutil
+import math
 
 def get_battery_status():
     battery_level = psutil.sensors_battery().percent
